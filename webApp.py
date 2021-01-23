@@ -6,7 +6,7 @@ import numpy as np
 
 
 
-model = tf.keras.models.load_model('model_simple_v2.hdf5')
+model = tf.keras.models.load_model('model_simple_v2.hdf5',compile = False)
 category = ["without mask", "with mask"]
 face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 size = 4
